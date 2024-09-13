@@ -1,4 +1,4 @@
-Game Link
+<h1>Game Link</h1>
 Your Gateway to Gaming Communities
 
 Introduction
