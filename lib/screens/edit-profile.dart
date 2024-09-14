@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:game_link_app/routes/app_routes.dart';
 import 'package:game_link_app/themes/colors.dart';
 import 'package:game_link_app/widgets/navbar.dart';
@@ -160,6 +161,14 @@ class _EditProfilePageState extends State<EditProfile> {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
+                    Fluttertoast.showToast(
+                      msg: "Profile Updated",
+                      toastLength: Toast.LENGTH_SHORT,
+                      gravity: ToastGravity.BOTTOM,
+                      backgroundColor: Colors.black.withOpacity(0.6),
+                      textColor: Colors.white,
+                      fontSize: 16.0,
+                    );
                     Navigator.pushNamed(context, AppRoutes.profile);
                   },
                   style: ElevatedButton.styleFrom(
